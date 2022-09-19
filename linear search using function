@@ -1,0 +1,23 @@
+int linearsearch(int arr[], int size, int element)
+{
+    int i;
+    for (i = 0; i < size; i++)
+        if (arr[i] == element)
+            return i;
+    return -1;
+}
+ 
+// Driver's code
+int main(void)
+{
+    int arr[] = { 2, 3, 4, 10, 40 };
+    int element = 10; //element needed to be found
+    int size = sizeof(arr) / sizeof(arr[0]); //size of an array finding
+ 
+    // Function call
+    int result = linearsearch(arr, size, element);
+    (result == -1)
+        ? printf("Element is not present in array")
+        : printf("Element is present at index %d", result);
+    return 0;
+}
