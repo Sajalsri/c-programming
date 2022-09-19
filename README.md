@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Sajalsri a curios student
+- 👋 Hi, I’m @Sajal-Srivastava a curios student
 - 🌱 I’m currently learning web devlopment
 
 
