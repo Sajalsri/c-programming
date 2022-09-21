@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main()
+{
+    int a[100], b[100], i, j,k, c[100], n, m;
+    printf("enter the size of the set a and b");
+    scanf("%d%d", &n, &m);
+    printf("enter the elements of the set a");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    printf("enter the elements of the set b");
+    for (j = 0; j < m; j++)
+    {
+        scanf("%d", &b[j]);
+    }
+// Logic for intersection
+    
+    for( i=0;i<n;i++)
+    {
+         for(j=0;j<m;j++)
+         {
+            if(a[i]==b[j])
+            {
+                c[k]=a[i];
+                k++;
+            }
+         }
+        
+    }
+    
+    // Printing the elements of intersection of set A and set B
+    printf("intersection of set A and set B is:-\n");
+    for(i=0;i<k;i++)
+      printf("%d ",c[i]);
+    
+    return 0; 
+}
