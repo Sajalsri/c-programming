@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Write C code here
+    //printf("Hello world");
+    char str[]="programming";
+    int i,j,len;
+    len=strlen(str); //strlen is function to find length of any string
+    for(i=0;i<len;i++) //i is for rows
+    {
+        for(j=0;j<=i;j++) //j is for rows
+        {
+            printf("%c",str[j]);
+            
+        }
+        printf("\n"); //we used new line to print in new line
+    }
+    return 0;
+}
